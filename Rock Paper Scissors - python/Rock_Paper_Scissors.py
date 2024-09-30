@@ -7,22 +7,22 @@ while running:
     
     comp = random.choice(choice)
 
-    player = input("Enter your choice (Rock, Paper, Scissors): ")
+    player = input("Enter your choice (Rock ✊,Paper ✋, Scissors ✂): ")
 
     
     while player not in choice:
-        player = input("Enter your choice (Rock, Paper, Scissors): ")
+        player = input("Enter your choice (Rock ✊, Paper ✋,Scissors ✂): ")
     
     print(f"Computer : {comp}")
     print(f"Player : {player}")
 
     if player == comp:
         print("It's Tie")
-    elif player == "Rock" and comp == "Paper":
+    elif (player == "Rock") and (comp == "Paper"):
         print("You lose")
-    elif player == "Paper" and comp == "Scissors":
+    elif (player == "Paper") and (comp == "Scissors"):
         print("You lose")
-    elif player == "Scissors" and comp == "Rock":
+    elif (player == "Scissors") and (comp == "Rock"):
         print("You lose")
     else:
         print("You win")
