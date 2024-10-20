@@ -147,7 +147,7 @@ body{
 
     #cart p {
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 500;
        
     }
 
@@ -177,6 +177,13 @@ body{
         align-items: center;
         width: 100%;
     }
+    #total {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-top: 15%;
+    }
+    
     
 
 
