@@ -182,6 +182,28 @@ body{
         width: 100%;
         justify-content: space-evenly;
         padding-top: 15%;
+        align-items: center;
+    }
+    #total p {
+        font-size: 1.1rem;
+    }
+    #total h3{
+        font-size: 1.5rem;
+    }
+    #delivery{
+        background-color: hsl(13, 31%, 94%);
+        width: 75%;
+        height: 6vh;
+        margin-top: 7%;
+        margin-left: 14%;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        display: none;
+    }
+    #delivery p{
+        font-size: 0.9rem;
     }
     
     
