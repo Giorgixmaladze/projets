@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+body{
+    background-color: #191919;
+}
+
+#container{
+    height: 100vh;
+}
+
+@media (min-width:375px){
+    header{
+        width: 100%;
+        height: 20%;
+        background-image: url(./Source-images/Abstract-Design.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+    #nav{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #head{
+        width: 85%;
+        height: 100%;
+        background-color: #262626;
+        border-radius: 30px;
+        border-collapse: collapse;
+        border: 1px solid #80808038;
+        
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    #logo-link{
+        text-decoration: none;
+        color: white;
+        
+    }
+    #logo{
+        display: flex;
+        align-items: center;
+    }
+    #sugg{
+        width: 17%;
+        height: 70%;
+    }
+    #sugg button{
+        height: 100%;
+        width: 100%;
+        border-radius: 18px;
+        background-color: #CAFF33;
+        border: none;
+    }
+    #sidebar{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        display: none;
+        justify-content: flex-end;
+    }
+    #sidebar div{
+        width: 60%;
+        height: 100%;
+        background-color: black;
+    }
+}
