@@ -18,7 +18,7 @@ body{
     header{
         width: 100%;
         height: 20%;
-        background-image: url(./Source-images/Abstract-Design-left.png);
+        background-image: url(../Source-images/Abstract-Design-left.png);
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -88,7 +88,7 @@ body{
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
-        background-image: url(./Source-images/Abstract\ Design-right.png);
+        background-image: url(../Source-images/Abstract\ Design-right.png);
         background-repeat: no-repeat;
     }
     #sidebar-head{
@@ -109,7 +109,7 @@ body{
     }
 
     #sidebar-head button{
-        background-image: url(./Source-images/x-button.png);
+        background-image: url(../Source-images/x-button.png);
         width: 9%;
         background-size: contain;
         background-repeat: no-repeat;
@@ -171,61 +171,6 @@ body{
         height: 100%;
         border: 1px solid gray;
     }
-    main{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-
-    #information{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 45%;
-        width: 95%;
-    }
-
-    #information h2{
-        color: white;
-        text-align: center;
-        font-size: 1.8rem;
-        line-height: 40px;
-        font-weight: 400;
-    }
-    #information b{
-        color: #CAFF33;
-        font-weight: 400;
-    }
-    #information p{
-        color: #98989A;
-        font-size: 0.9rem;
-        text-align: center;
-        line-height: 25px;
-    }
-    
-    #open-account{
-        width: 100%;
-        height: 8%;
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-    }
-    #open-account a{
-        width: 40%;
-        height: 100%;
-        
-    }
-    #open-account button{
-        background-color: #CAFF33;
-        border-radius: 25px;
-        border: none;
-        width: 100%;
-        height: 100%;
-        font-size: 1rem ;
-    }
     #registration{
         display: flex;
         height: 15%;
@@ -258,6 +203,114 @@ body{
         background-color: #CAFF33;
         font-size: 1rem;
     }
+    main{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    #authorization{
+        width: 90%;
+        height: 100vh;
+        background-color: #262626;   
+        overflow: hidden;
+        border-radius: 15px; 
+    }
+    #background{
+        width: 100%;
+        height: 100%;
+        background-image: url(../Source-images/Abstract\ Design-right.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-y: top;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column
 
+    }
+    #header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 20%;
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+
+    }
+    #header h3{
+        font-weight: 500;
+        font-size: 2rem;
+        color: #CAFF33;
+    }
+    #header p{
+        color: #B3B3B3;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    #form{
+        display: flex;
+        justify-content: center;
+        height: 70%;
+        width: 100%;
+    }
+    #myform{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    #myform input{
+        height: 12%;
+        border-radius: 25px;
+        background-color: #1C1C1C;
+        border: 1px solid #8080804d;
+        outline: none;
+        color: #656567;
+        font-size: 1rem;
+        padding-left: 5%;
+    }
+    #myform input::placeholder{
+        font-weight: 300;
+        color: #4C4C4D;
+        font-size: 1rem;
+    }    
+    input {
+        color: #656567;
+        background-color: black;
+      }
+      ::-ms-reveal {
+        filter: invert(100%);
+        padding-right: 10%;
+      }
+    #signup{
+        height: 12%;
+        border-radius: 25px;
+        border: none;
+        background-color: #CAFF33;
+        font-size: 1rem;
+    }
+    #signin{
+        background-color: #333333;
+        height: 12%;
+        border-radius: 25px;
+        border: none;
+    }
+    #continue-with{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    #continue-with div{
+        height: 0%;
+        width: 22%;
+        border: 1px solid #656567;
+    }
+    #continue-with p{
+        color: #656567;
+    }
     
 }

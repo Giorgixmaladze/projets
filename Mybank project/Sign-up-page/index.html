@@ -8,21 +8,20 @@
 </head>
 <body>
     <div id="container">
-        
         <header>
             <div id="nav">
                 <div id="head">
                     <nav>
                         <a href="" id="logo-link">
                             <div class="logo">
-                                <img src="./Source-images/shape-30.png" alt="" >
+                                <img src="../Source-images/shape-30.png" alt="" >
                                 <h3>MyBank</h3>
                             </div>
                         </a>
                         <div id="sugg">
                             
                             <button>
-                                <img src="./Source-images/Icon.png" alt="">
+                                <img src="../Source-images/Icon.png" alt="">
                             </button>
                         </div>
                     </nav>
@@ -33,7 +32,7 @@
             <div id="sidebar-temp">
                 <div id="sidebar-head">
                     <div class="logo">
-                        <img src="./Source-images/shape-30.png" alt="">
+                        <img src="../Source-images/shape-30.png" alt="">
                         <h3>MyBank</h3>
                     </div>
                     <button id="close-navbar"></button>
@@ -68,21 +67,36 @@
             </div>
         </div>
         <main>
-            <div id="information">
-                <h2>Welcome to YourBank
-                    Empowering Your <b>Financial Journey</b>
-                </h2>
-                <p>At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
+            <div id="authorization">
+                <div id=background>
+                    <div id="header">
+                        <h3>Sign Up</h3>
+                        <p>lJoin our community today! Create an account to unlock exclusive features and personalized experiences.</p>
+                    </div>
+                    <div id="form">
+                        <form id="myform">
+                            <input type="text" name="firstname" required placeholder="Enter First Name">
+                            <input type="text" name="lastname"required placeholder="Enter Last Name">
+                            <input type="email" name="email" required placeholder="Enter Your Email">
+                            <input type="password" name="pass" required placeholder="Enter Your Password">
+                            <button id="signup">Sign up</button>
+                            <button id="signin">Sign in</button>
+                            <div id="continue-with">
+                                <div></div>
+                                <p>or continue with</p>
+                                <div></div>
+                            </div>
+                        </form>
+                    </div>    
+                </div>
+                
             </div>
-            <div id="open-account">
-                <a href="">
-                <button>Open Account</button>
-                </a>
-            </div>
-
-
-        </main>
+        </main>   
+    
     </div>
+    
+
+
     <script src="script.js"></script>
 </body>
 </html>
