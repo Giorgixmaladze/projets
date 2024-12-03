@@ -470,21 +470,21 @@ body{
         justify-content: center;
         
     }
-    #text div{
+    #text1{
         width: 90%;
 
     }
     #text div p{
         color: #B3B3B3;
     }
-    #author{
+    .author{
         margin-top: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
     
     }
-    #author h3{
+    .author h3{
         color: #CAFF33;
         font-weight: 400;
     }
@@ -620,6 +620,9 @@ body{
         height: 100%;
         border: 1px solid grey;
     }
+    #text2{
+        display: none;
+    }
 
 }
 
@@ -629,14 +632,17 @@ body{
     header{
         background:none;
     }
+    #nav{
+        height: 10vh;
+    }
     
     #sugg{
         display: none;
     }
-    #logo img{
+    .logo img{
         width: 40px;
     }
-    #logo h3{
+    .logo h3{
         font-size: 1.5rem;
     }
     ul{
@@ -648,9 +654,10 @@ body{
     ul li a{
         text-decoration: none;
         color: white;
+        font-size: 1.2rem;
     }
     #registrations{
-        width: 15%;
+        width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -660,14 +667,14 @@ body{
 
     #registrations a{
         width: 50%;
-        height: 45%;
+        height: 60%;
         border-radius: 25px;
         overflow: hidden;
     }
     #registrations a button{
         width: 100%;
     height: 100%;
-    
+    font-size: 1.2rem;
     border: none;
     }
 
@@ -741,7 +748,60 @@ body{
         height: 105px;
         width: 105px;
     }
+    #about{
+        width: 50%;
+    }
+    #testimonials h2{
+        font-size: 3rem;
+    }
+    #testimonials p {
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
 
+    #choice {
+        margin-top: 10%;
+        height: 15vh;
+
+    }
+
+    #individuals,#buisness{
+        font-size: 1.2rem;
+    }
+    #review{
+        height: 60vh;
+    }
+    #mark img{
+        width: 60px;
+    }
+    #text {
+        padding-top: 3%;
+        height: 65%;
+        justify-content: space-evenly;
+    }
+    #text1,#text2{
+        gap: 15px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(128, 128, 128, 0.291);
+        border-radius: 25px;
+    
+    }
+    #text1 p,#text2 p{
+        font-size: 1.2rem;
+    }
+
+    .author{
+        margin-top: 3%;
+        border: none;
+    }
+    .author h3{
+        font-size: 1.5rem;
+    }
+    
     
    
 }

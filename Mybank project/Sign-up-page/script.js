@@ -25,13 +25,12 @@ function datarender(){
 
     const data = new Data(firstName,lastName,email,pass)
     const users = localStorage.setItem("users",JSON.stringify(data))
-    dataBase.push(localStorage.getItem("users"))
-    localStorage.setItem("database",dataBase)
-    console.log(localStorage.getItem("dataBase"))
+    dataBase.push(JSON.parse(localStorage.getItem("users")))
+    localStorage.setItem("database",JSON.stringify(dataBase))
     
 
     resetItems(firstName,lastName,email,pass)
-    console.log(document.querySelector("#signup"))
+ 
     
 }
 
@@ -60,4 +59,6 @@ form.addEventListener("submit",(e)=>{
     datarender()
     
 })
+
+
 
