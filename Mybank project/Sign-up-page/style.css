@@ -506,6 +506,7 @@ body{
     }
     #footer-head-logo h3{
         color: white;
+        font-weight: 400;
     }
     #footer-nav{
         width: 80%;
@@ -621,6 +622,9 @@ body{
         border: 1px solid grey;
     }
     #text2{
+        display: none;
+    }
+    #text3{
         display: none;
     }
 
@@ -779,7 +783,7 @@ body{
         height: 65%;
         justify-content: space-evenly;
     }
-    #text1,#text2{
+    #text1,#text2 ,#text3{
         gap: 15px;
         width: 30%;
         display: flex;
@@ -790,7 +794,14 @@ body{
         border-radius: 25px;
     
     }
-    #text1 p,#text2 p{
+
+    #text2 .author{
+        margin-top: 10%;
+    }
+    #text3 .author{
+        margin-top: 5%;
+    }
+    #text1 p,#text2 p,#text3 p{
         font-size: 1.2rem;
     }
 
@@ -800,6 +811,29 @@ body{
     }
     .author h3{
         font-size: 1.5rem;
+    }
+    #footer-head-logo{
+        margin-top: 5%;
+    }
+    #footer-head-logo img{
+        width: 40px;
+    }
+    #footer-head-logo h3{
+        font-size: 1.5rem;
+        
+    }
+
+    #footer-nav{
+        
+        justify-content: center;
+        gap: 5%;
+        padding-top: 5%;
+    }
+    #footer-nav a{
+        font-size: 1.2rem;
+    }
+    .l{
+        margin-top: 10%;
     }
     
     
