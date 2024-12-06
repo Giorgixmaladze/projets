@@ -631,7 +631,7 @@ body{
 }
 
 
-@media (min-width:1440px) {
+@media (min-width:1200px) {
     
     header{
         background:none;
@@ -696,7 +696,7 @@ body{
         justify-items: center;
     }
     #myform input{
-        height: 75%;
+        height: 60px;
         width: 85%;
         font-size: 1.2rem;
     }
@@ -812,8 +812,12 @@ body{
     .author h3{
         font-size: 1.5rem;
     }
-    #footer-head-logo{
+    footer{
+        height: 75vh;
         margin-top: 5%;
+    }
+    #footer-head-logo{
+        margin-top: 3%;
     }
     #footer-head-logo img{
         width: 40px;
@@ -833,9 +837,153 @@ body{
         font-size: 1.2rem;
     }
     .l{
-        margin-top: 10%;
+        margin-top: 6%;
+    }
+    #info{
+        margin-top: 3%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #location{
+        margin-top: 0%;
+        width: 15%;
+    }
+    #contact{
+        width: 35%;
+    }
+    #contact div p{
+        font-size: 1.2rem;
+    }
+    #location p {
+        font-size: 1.2rem;
+    }
+    #footer-footer{
+        flex-direction: row;
+        margin-top: 0%;
+        height: 30%;
+    }
+    #social-contacts{
+        position:unset;
+        width: 50%;
+    }
+    #social-contacts a{
+        width: 70px;
+        height: 70px;
+    }
+    #social-contacts a img{
+        width: 35px;
+    }
+    #privacy-policies{
+        margin-top: 0%;
+        width: 40%;
+    }
+}
+
+
+@media (min-width:1920px){
+    .logo img{
+        width: 50px;
+    }
+    .logo h3{
+        font-size: 1.7rem;
+    }
+    ul li a{
+        font-size: 1.5rem;
     }
     
-    
-   
+    #registrations a button{
+        font-size: 1.5rem;
+    }
+
+    #header h3{
+        font-size: 2.7rem;
+    }
+
+    #header p{
+        font-size: 1.5rem;
+    }
+    #myform input{
+        font-size: 1.5rem;
+    }
+    #myform input::placeholder{
+        font-size: 1.5rem;
+    }
+    #signup button{
+        font-size: 1.5rem;
+    }
+
+    #signin button{
+        font-size: 1.5rem;
+    }
+    #continue-with p{
+        font-size: 1.5rem;
+    }
+    #google,#facebook,#apple{
+        width: 120px;
+        height: 120px;
+    }
+    #google button img,#facebook button img,#apple button img{
+        width: 35px;
+    }
+    #testimonials h2{
+        font-size: 3.2rem;
+    }
+    #testimonials p{
+        font-size: 1.5rem;
+    }
+    #individuals,#buisness{
+        font-size: 1.5rem;
+    }
+
+    #mark img{
+        width: 70px;
+    }
+
+    #text1 p,#text2 p,#text3 p{
+        font-size: 1.5rem;
+    }
+
+    #footer-head-logo img{
+        width: 50px;
+    }
+    #footer-head-logo h3{
+    font-size: 1.7rem;
+    }
+
+    #footer-nav a {
+        font-size: 1.5rem;
+    }
+
+    #contact {
+        width: 40%;
+    }
+    #contact div p{
+        font-size: 1.5rem;
+    }
+    #contact div img{
+        width: 35px;
+    }
+    #location{
+        align-items: center;
+    }
+    #location img{
+        width: 35px;
+    }
+    #location p{
+        font-size: 1.5rem;
+    }
+    #social-contacts a {
+        width: 90px;
+        height: 90px;
+    }
+    #social-contacts a img {
+        width: 45px;
+    }
+    #privacy-policies p {
+        font-size: 1.3rem;
+    }
+    #privacy-policies div p{
+        font-size: 1.3rem;
+    }
+
 }
