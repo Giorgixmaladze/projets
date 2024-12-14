@@ -221,7 +221,7 @@ body{
     }
     #authorization{
         width: 90%;
-        height: 100vh;
+        height: 105vh;
         background-color: #262626;   
         overflow: hidden;
         border-radius: 15px; 
@@ -262,7 +262,7 @@ body{
     #form{
         display: flex;
         justify-content: center;
-        height: 70%;
+        height: 80%;
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -329,6 +329,9 @@ body{
         height: 100%;
         color: white;
         font-size: 1rem;
+    }
+    #for-errors{
+        margin-top: 20px;
     }
     #continue-with{
         display: flex;
@@ -985,5 +988,4 @@ body{
     #privacy-policies div p{
         font-size: 1.3rem;
     }
-
 }
