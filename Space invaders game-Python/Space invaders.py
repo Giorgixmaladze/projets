@@ -3,44 +3,60 @@ import pygame
 import random
 
 
-#initialize pygame
+#მოვახდინეთ თავდაპირველად pygame ის ინიციალიზება 
 pygame.init()
 
-#create the screen
+#set mode მეთოდის საშუალებით შევქმენით ფანჯარა რომელიც არის 800px სიგანის და 600px სიმაღლის
 screen = pygame.display.set_mode((800,600))
 
 
-#Background
+#გავაკეთეთ თამაშის უკანაფონი და შევინახეთ background ცვლადში
 background = pygame.image.load("background.jpeg")
 
 
-#Title and icon
+#set_caption მეთოდის დახმარებით გავაკეთეთ თამაშის სახელი
 pygame.display.set_caption("Space invaders")
+
+#.image.load მეთოდის გამოყენებით load მეთოდს გადავეცით სურათის სახელი და მისი გაფართოება
 icon = pygame.image.load("space.png")
+
+#.set_icon მეთოდის დახმარებით გავაკეთეთ სურათი ასე რომ ვთქვათ
+# ლოგო ჩვენი თამაშის და არგუმენტად გადავეცით icon ცვლადი რომელშიც შენახულია ჩვენი სურათი
 pygame.display.set_icon(icon)
 
 
-#player
+#შევქმენით player_img ცვლადი რომელშიც .image.load მეთოდის საშუალებით გადავცემთ სურათის სახელს (ამ შემთხვევაში ხომალდის სურათი - ხომალდი არის მოთამაშე)
 player_img = pygame.image.load("10969105451642010534-128.png")
+
+#გავუწერეთ კოორდინატები ჩვენს სურათს x და y ღერძებზე და შევინახეთ ეს კოორდინატები შესაბამის ცვლადებში
 player_x = 350
 player_y = 480
+
+# player_x_change ცვლადს გამოვიყენებთ იმისთვის რომ ვამოძრავოთ ჩვენი ხომალდი x ღერძზე ღილაკებზე დაჭერის შედეგად
 player_x_change = 0
 
 
-#enemy
+#Enemy - მოწინააღმდეგე
+#წამოვიღეთ მოწინააღმდგის სურათი
 enemy_img = pygame.image.load("png_43d2y.png")
-enemy_x = random.randint(50,736)
-enemy_y = random.randint(50,150)
+
+#შევქმენით ცვლადები რომლებსაც გავუწერეთ თავდაპირველი მდებარეობა x და y ღერძებზე
+enemy_x = 0
+enemy_y = 0
+#შევქმენით ცვლადები რომლებიც აკონტროლებს მდებარეობას მოწინააღმდეგეს x და y ღერძებზე
 enemy_x_change = 1
-enemy_y_change = 40
+enemy_y_change = 30
 
 
 #Bullet
-#ready - you can't se the bullet on the screen
-#fire - bullet is currently moving
+#წამოვიღეთ ტყვიის სურათი როდესაც ჩვენი ხომალდი გაისვრის
 bullet_img = pygame.image.load("bullet(1).png")
+
+#შევქმენით ცვლადები რომლებსაც გავუწერეთ თავდაპირველი მდებარეობა x და y ღერძებზე
 bullet_x = 0
 bullet_y = 480
+
+#
 bullet_x_change = 0
 bullet_y_change = 1
 bullet_state = "ready"
