@@ -1,6 +1,6 @@
 
 import pygame
-import random
+
 
 
 #მოვახდინეთ თავდაპირველად pygame ის ინიციალიზება 
@@ -56,16 +56,19 @@ bullet_img = pygame.image.load("bullet(1).png")
 bullet_x = 0
 bullet_y = 480
 
-#
+#შევქმენით ცვლადები რომლის საშუალებითაც ვაკონტროლებთ ტყვიის მდებარეობას x და y ღერძებზე
 bullet_x_change = 0
 bullet_y_change = 1
 bullet_state = "ready"
 
-
+#შევქმენით ფუნქცია player რომელსაც გადავეცით ორი პარამეტრი x და y რომელსაც გადავცემთ მის საბოლოო მდებარეობას არგუმენტად x და y ღერძებზე
 def player(x,y):
+
+    #screen.blit მეთოდის საშუალებით მივუთითეთ რა გამოვიტანოთ ეკრანზე და რა პოზიციაზე
     screen.blit(player_img,(x,y))
 
 
+#შევქმენით ფუნქცია Enemy რომელსაც გადავეცით ორი პარამეტრი x და y რომლებსაც გადავცემთ მის საბოლოო მდებარეობას უკვე არგუმენტად x და y ღერძებზე
 def enemy(x,y):
     screen.blit(enemy_img, (x, y))
 
@@ -75,7 +78,11 @@ def fire_bullet(x,y):
     global bullet_state
     bullet_state = "fire"
 
-    screen.blit(bullet_img,(x+16,y+10))
+    screen.blit(bullet_img,(x+16,y))
+
+def collisdion(bulletY,enemy):
+    pass
+
 
 #game loop - window close
 running = True
@@ -136,9 +143,14 @@ while running:
         bullet_y = 480
         bullet_state = "ready"
 
+
+
     if bullet_state == "fire":
         fire_bullet(bullet_x,bullet_y)
         bullet_y -= bullet_y_change
+
+
+
 
     player(player_x,player_y)
     enemy(enemy_x,enemy_y)

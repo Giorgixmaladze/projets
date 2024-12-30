@@ -224,8 +224,89 @@ body{
     #main-container{
         width: 90%;
         background-color:#262626;
-        height: 50vh;
+        height: 78vh;
         border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
+
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        align-items: center;
+        height: 100%;
+    }
+
+    #security-img{
+        padding-top: 5%;
+    }
+    
+
+    #information h2{
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 400;
+        color: white;
+    }
+    #information h2 b{
+        color: #c9ff33d4;
+        font-weight: 400;
+    }
+    #information p {
+        padding-top: 5%;
+        text-align: center;
+        color: #B3B3B3;
+        line-height: 25px;
+    }
+
+    #benefits{
+        min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40%;
+    }
+
+    #introduction{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #introduction h2{
+        font-size: 2rem;
+        font-weight: 400;
+        color: white;
+    }
+    #introduction h2 b{
+        font-weight: 400;
+        color: #c9ff33d4;
+    }
+
+    #introduction p{
+        padding-top: 5%;
+        color: #B3B3B3;
+        line-height: 25px;   
+    }
+    #main-part{
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        justify-items: center;
+        padding-top: 15%;
+        gap: 5%;
+    }
+    .part{
+        background-color: #CAFF33;
+        width: 90%;
+
+    }
+
 
 }
