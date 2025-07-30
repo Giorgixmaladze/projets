@@ -1,9 +1,9 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 export const AuthContext = createContext()
 
 const AuthProvider = ({ children }) => {
-
+    const [eachCount,setEachCount] = useState([])
     const eachCharCount = (text) => {
     
         const obj = {};
@@ -14,12 +14,14 @@ const AuthProvider = ({ children }) => {
         const sortedObj = Object.entries(obj).sort((a,b) =>{
             return b[1]-a[1]
         })
-        console.log(sortedObj);
+
+        setEachCount(sortedObj)
+   
     }
 
 
     return (
-        <AuthContext.Provider value={{ eachCharCount }}>
+        <AuthContext.Provider value={{eachCount, eachCharCount }}>
             {children}
         </AuthContext.Provider>
     )
