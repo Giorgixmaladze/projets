@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import useTheme from './hooks/usetheme'
+import { AuthContext } from './context/context'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
   // theme change
   const [dark, toggleDarkMode] = useTheme()
 
+  const {eachCharCount} = useContext(AuthContext)
 
 
   // exclude spaces
@@ -95,9 +97,10 @@ function App() {
         <div className='flex min-[375px]: w-11/12 min-[375px]: flex-col min-[375px]:gap-[40px] '>
           <h1 className='font-semibold min-[375px]:text-[45px] min-[375px]:text-center'>Analyze your text in real-time.</h1>
           <div className='flex min-[375px]:flex-col min-[375px]: gap-[20px]'>
-            <textarea name='userInput' maxLength={limit && maxLimit} onChange={(e) => {
+            <textarea name='userInput' maxLength={limit ? maxLimit : undefined} onChange={(e) => {
               setCharacterCount(e.target.value.length)
               setText(e.target.value)
+              eachCharCount(e.target.value)
             }} className='min-[375px]: w-full min-[375px]: h-[200px] border border-gray-300 bg-gray-100 outline-0 min-[375px]:rounded-[10px] min-[375px]:text-[20px]' />
             <div className=' flex min-[375px]: flex-col min-[375px]:gap-[10px] '>
               <span className='flex min-[375px]: gap-[10px]' >
@@ -140,8 +143,13 @@ function App() {
           </div>
         </div>
 
-
-
+      {/*letter density*/}
+        <div className='w-screen min-[375px]:pl-[20px] font-semibold' >
+          <div className='w-11/12'>
+            <h2 className='min-[375px] text-[31px]'>Letter Density</h2>
+          </div>
+          
+        </div>
       </main>
 
 
