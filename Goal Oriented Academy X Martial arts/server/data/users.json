@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "password": "Password123!"
+  },
+  {
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "password": "Welcome@2025"
+  },
+  {
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "password": "GoaXMartial#1"
+  },
+  {
+    "name": "Diana Prince",
+    "email": "diana.prince@example.com",
+    "password": "WonderWoman!42"
+  },
+  {
+    "name": "Ethan Hunt",
+    "email": "ethan.hunt@example.com",
+    "password": "Mission:Impossible7"
+  },
+  {
+    "name": "Fatima Ali",
+    "email": "fatima.ali@example.com",
+    "password": "Secure*Pass987"
+  },
+  {
+    "name": "George Miller",
+    "email": "george.miller@example.com",
+    "password": "Summer2025$"
+  },
+  {
+    "name": "Hiro Tanaka",
+    "email": "hiro.tanaka@example.com",
+    "password": "Samurai@Code"
+  },
+  {
+    "name": "Isabella Ruiz",
+    "email": "isabella.ruiz@example.com",
+    "password": "BuenosDias!10"
+  },
+  {
+    "name": "Jamal Carter",
+    "email": "jamal.carter@example.com",
+    "password": "StrongPass!55"
+  }
+]

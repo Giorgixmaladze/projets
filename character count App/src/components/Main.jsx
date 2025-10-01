@@ -4,7 +4,7 @@ import Letters from "./Letters"
 import { AuthContext } from "../context/context"
 
 const Main = () =>{
-    const{dark,limit,setCharacterCount,setText,eachCharCount,exclude,toggleLimit,handleLimit,characterCount} = useContext(AuthContext)
+    const{dark,maxLimit,limit,setCharacterCount,setText,eachCharCount,exclude,toggleLimit,handleLimit,characterCount} = useContext(AuthContext)
 
     return(
         <main className='w-screen flex min-[375px]:flex-col min-[375px]:items-center min-[375px]: gap-[50px] min-xl:w-7/12'>
