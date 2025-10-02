@@ -10,6 +10,22 @@
   }
 }
 
+
+@keyframes shine {
+  0%{
+    text-shadow: 0 0 0px #9f0712;
+  }
+  100%{
+    text-shadow: 0 0 10px #9f0712;
+  }
+  
+}
+
 .glow {
   animation: glow 2s ease-in-out infinite;
+}
+
+
+.shine{
+  animation: shine 2s ease-in-out infinite alternate;
 }
