@@ -6,11 +6,9 @@ const Sidebar = () =>{
 
 
     return (
-        <div className="min-[375px]:w-full min-[375px]:h-full bg-[#0f0b0aca] absolute top-[70px]">
+        <div className="min-[375px]:w-full min-[375px]:h-full bg-[#0f0b0ade] absolute top-[70px]">
 
             <div>
-
-                <button onClick={closeSidebar}>Close</button>
                 <nav>
                 <ul>
                     <li>Home</li>
