@@ -4,10 +4,10 @@ import Sidebar from "./Sidebar"
 import { sidebarContext } from "../context/SidebarContext"
 
 const Header = ({ txt }) => {
-    const { openSidebar, sidebar,closeSidebar } = useContext(sidebarContext)
+    const { openSidebar, sidebar, closeSidebar } = useContext(sidebarContext)
     return (
 
-        <header className="min-[375px]:h-[70px] min-[375px]:w-full bg-gray-950 min-[375px]:flex min-[375px]:items-center min-[375px]:justify-around">
+        <header className="min-[375px]:h-[70px] min-[375px]:w-full bg-gray-950 min-[375px]:flex min-[375px]:items-center min-[375px]:justify-around  shadow-2xl shadow-green-500">
             <img src="#logo" alt="" />
             <h1 className="text-[20px] font-bold bg-gradient-to-r from-green-900 to-green-200 bg-clip-text text-transparent glow">
                 {txt}
@@ -26,15 +26,19 @@ const Header = ({ txt }) => {
                         <button>Goa Matial Arts</button>
                     </nav>
                 </div>
-                {sidebar?(
-                   
-                   <button onClick={closeSidebar}>
-                    <img src="/Home/close(white).png" alt="" />
-                   </button>
-                ):(<button onClick={openSidebar}>
-                    <img src="/Home/burger-menu(white).png"  alt="" />
-                </button> )}
-                
+                <div className=" flex items-center min-md:hidden">
+                    {sidebar ? (
+
+                        <button onClick={closeSidebar}>
+                            <img src="/Home/close(white).png" alt="" />
+                        </button>
+                    ) : (<button onClick={openSidebar}>
+                        <img src="/Home/burger-menu(white).png" alt="" />
+                    </button>)}
+
+                </div >
+
+
             </div>
             {sidebar && <Sidebar />}
 
