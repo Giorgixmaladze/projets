@@ -29,3 +29,18 @@
 .shine{
   animation: shine 2s ease-in-out infinite alternate;
 }
+
+@keyframes circleAnim {
+  0%{
+    width: 280px;
+
+  }
+  100%{
+    transform: scale(110%);
+   
+  }
+}
+
+.circle{
+  animation: circleAnim 2s infinite  alternate;
+}
