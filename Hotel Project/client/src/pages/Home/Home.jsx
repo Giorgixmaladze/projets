@@ -4,7 +4,8 @@ import HomeIntro from "./Home-intro.jsx"
 const Home = () =>{
     return(
         <div>
-            <HomeIntro />
+            
+                <HomeIntro />
             {/* <Header /> */}
         </div>
     )

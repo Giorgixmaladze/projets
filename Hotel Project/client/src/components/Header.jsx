@@ -4,12 +4,12 @@ import { SidebarContext } from '../context/SidebarContext'
 const Header = () => {
    const {isMobile} = useContext(SidebarContext)
     return(
-        <header className="w-full pl-4 pt-4 bg-transparent">
-            <div className="flex justify-around items-center">
+        <header className="w-full pl-4 pt-4 pr-4 bg-transparent absolute">
+            <div className="flex justify-between items-center">
                 <h1 className="text-2xl font-light text-white">Hotel Goa</h1>
                 {isMobile ? (
                     <button className="">
-                        
+                        <img src="/burgerMenu.svg" alt="BurgerMenu"  className='w-[35px]' />
                     </button>
                 ) : (
                     <nav className="flex space-x-6">
