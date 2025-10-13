@@ -1,15 +1,25 @@
 import { useState, useEffect, useContext } from 'react'
 import { SidebarContext } from '../context/SidebarContext'
+import useScroll from '../hooks/useScroll'
 
 const Header = () => {
-   const {isMobile} = useContext(SidebarContext)
-    return(
-        <header className="w-full pl-4 pt-4 pr-4 bg-transparent absolute">
-            <div className="flex justify-between items-center">
-                <h1 className="text-2xl font-light text-white">Hotel Goa</h1>
+    const [scrolled] = useScroll()
+
+
+
+    const { isMobile } = useContext(SidebarContext)
+    return (
+        <header className={`w-full h-[50px] ${scrolled ? "bg-white fixed" : "bg-transparent"} absolute transition-all duration-500 min-[375px]:flex min-[375px]:items-center min-[375px]:justify-around  `} id="navbar">
+            <div className="flex justify-between items-center w-11/12">
+                <h1 className={`text-2xl font-light ${scrolled ? "text-cyan-400" : "text-white"}`}>Hotel Goa</h1>
                 {isMobile ? (
                     <button className="">
-                        <img src="/burgerMenu.svg" alt="BurgerMenu"  className='w-[35px]' />
+                        {scrolled ? (
+                            <img src="/burger_menu(grey).svg" className='w-[35px]' />
+                        ) : (
+                            <img src="/burgerMenu.svg" alt="BurgerMenu" className='w-[35px]' />
+                        )}
+
                     </button>
                 ) : (
                     <nav className="flex space-x-6">
