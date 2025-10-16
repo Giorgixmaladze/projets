@@ -1,6 +1,6 @@
 const BookingForm = () => {
     return (
-        <div className="bg-gray-100 w-11/12 min-[375px]:flex min-[375px]:justify-center min-[375px]:h-[55vh] min-[375px]:items-center  ">
+        <div className="bg-gray-100 w-11/12 min-[375px]:flex min-[375px]:justify-center min-[375px]:h-[70vh] min-[375px]:items-center  ">
             <form action="" className="min-[375px]:flex min-[375px]:flex-col min-[375px]:gap-[15px] min-[375px]:w-11/12 ">
                 <input type="email" name="email" placeholder="Your Email Address" className="min-[375px]:h-[45px] bg-[#e4e5e7] pl-4 pr-4 text-gray-500" />
                 <select name="roomType" placeholder="Select Room Type" className="w-full h-[45px] bg-[#e4e5e7] pl-4 pr-10 text-gray-500 appearance-none outline-none ">

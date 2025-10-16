@@ -7,7 +7,7 @@
     "capacity": 1,
     "description": "A comfortable single room ideal for solo travelers. Includes free Wi-Fi, air conditioning, and breakfast.",
     "amenities": ["Free Wi-Fi", "Air Conditioning", "Breakfast Included", "Smart TV", "Private Bathroom"],
-    "image": "https://images.unsplash.com/photo-1560067174-894b1e727f5c?auto=format&fit=crop&w=1200&q=80"
+    "image": "https://content.r9cdn.net/kimg/24/74/537a1e5c-17443037f11.jpg"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "capacity": 2,
     "description": "Spacious double room with a queen bed, modern décor, and a city view.",
     "amenities": ["Free Wi-Fi", "Smart TV", "Mini Fridge", "Room Service", "City View"],
-    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+    "image": "https://www.rigas-hotel.gr/wp-content/uploads/2025/07/rigas-hotel-DOUBLE-DELUXE-SEA-VIEW-26.jpg"
   },
   {
     "id": 3,
@@ -37,7 +37,7 @@
     "capacity": 4,
     "description": "Spacious family suite with two bedrooms, a living area, and a kitchenette.",
     "amenities": ["Kitchenette", "Living Area", "Free Wi-Fi", "TV", "Breakfast Included"],
-    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+    "image": "https://www.onceinmykonos.com/uploads/nr_photos/1920/elite-two-bedroom-suite-sea-view_7347.jpg"
   },
   {
     "id": 5,
@@ -47,6 +47,6 @@
     "capacity": 3,
     "description": "Our most luxurious suite with a panoramic view, private jacuzzi, and personal butler service.",
     "amenities": ["Jacuzzi", "Butler Service", "Balcony", "Mini Bar", "Premium TV Channels"],
-    "image": "https://images.unsplash.com/photo-1590073242678-3f0b1c7c4f4e?auto=format&fit=crop&w=1200&q=80"
+    "image": "https://v9c9u8s9.delivery.rocketcdn.me/wp-content/uploads/2020/10/athlc-deluxe-room-0305-hor-clsc-1024x683.jpg.webp"
   }
 ]
