@@ -1,4 +1,4 @@
-import Header from "../../components/Header"
+import Header from "../../components/Home/Header"
 import { useEffect } from "react"
 import { startBackgroundRotation } from "../../utils/changeBg"
 

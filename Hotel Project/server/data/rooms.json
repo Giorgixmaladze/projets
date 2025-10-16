@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Cozy Single Room",
+    "type": "single",
+    "price": 60,
+    "capacity": 1,
+    "description": "A comfortable single room ideal for solo travelers. Includes free Wi-Fi, air conditioning, and breakfast.",
+    "amenities": ["Free Wi-Fi", "Air Conditioning", "Breakfast Included", "Smart TV", "Private Bathroom"],
+    "image": "https://images.unsplash.com/photo-1560067174-894b1e727f5c?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Modern Double Room",
+    "type": "double",
+    "price": 95,
+    "capacity": 2,
+    "description": "Spacious double room with a queen bed, modern décor, and a city view.",
+    "amenities": ["Free Wi-Fi", "Smart TV", "Mini Fridge", "Room Service", "City View"],
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Luxury Deluxe Room",
+    "type": "deluxe",
+    "price": 150,
+    "capacity": 2,
+    "description": "Deluxe room offering premium comfort with a king-size bed, private balcony, and elegant interior design.",
+    "amenities": ["Balcony", "Room Service", "Free Wi-Fi", "Smart TV", "Mini Bar"],
+    "image": "https://images.unsplash.com/photo-1590490359864-7c77b1b1d07b?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Family Suite",
+    "type": "suite",
+    "price": 210,
+    "capacity": 4,
+    "description": "Spacious family suite with two bedrooms, a living area, and a kitchenette.",
+    "amenities": ["Kitchenette", "Living Area", "Free Wi-Fi", "TV", "Breakfast Included"],
+    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Presidential Suite",
+    "type": "suite",
+    "price": 350,
+    "capacity": 3,
+    "description": "Our most luxurious suite with a panoramic view, private jacuzzi, and personal butler service.",
+    "amenities": ["Jacuzzi", "Butler Service", "Balcony", "Mini Bar", "Premium TV Channels"],
+    "image": "https://images.unsplash.com/photo-1590073242678-3f0b1c7c4f4e?auto=format&fit=crop&w=1200&q=80"
+  }
+]
