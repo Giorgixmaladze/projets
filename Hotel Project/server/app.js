@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const { Room } = require("./model/rooms.model");
+const roomsRouter = require("./router/rooms.router");
 
 dotenv.config();
 const app = express();
@@ -10,16 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Rooms route
-app.get("/rooms", async (req, res) => {
-  try {
-    const rooms = await Room.find();
-    res.json(rooms);
-  } catch (err) {
-    res.status(500).json({ message: "Error fetching rooms", error: err });
-  }
-});
 
+app.use("/",roomsRouter)
 
 
 mongoose
