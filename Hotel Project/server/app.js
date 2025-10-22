@@ -4,13 +4,14 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const { Room } = require("./model/rooms.model");
 const roomsRouter = require("./router/rooms.router");
+const servicesRouter = require("./router/services.router");
 
 dotenv.config();
 const app = express();
 
 app.use(express.json());
 app.use(cors());
-
+app.use("/services", servicesRouter)
 
 app.use("/",roomsRouter)
 
