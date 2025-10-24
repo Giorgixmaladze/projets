@@ -4,7 +4,7 @@ export const SidebarContext = createContext()
 
 
 const SidebarProvider = ({ children }) => {
-    const [isOpen, setIsOpen] = useState()
+    const [isOpen, setIsOpen] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
     const openSidebar = () => setIsOpen(true)
 
@@ -16,14 +16,13 @@ const SidebarProvider = ({ children }) => {
             setIsMobile(window.innerWidth < 768)
         }
 
-        // Check initial screen size
+       
         checkScreenSize()
         
-        // Add event listener
+        
         window.addEventListener('resize', checkScreenSize)
 
-        // Cleanup function
-        return () => window.removeEventListener('resize', checkScreenSize)
+        
     }, [])
 
 
