@@ -1,4 +1,5 @@
 import BookingForm from "../../components/Home/BookingForm"
+import GoaInfo from "../../components/Home/GoaInfo/GoaInfo"
 import Rooms from "../../components/Home/Rooms"
 import Services from "../../components/Home/Services"
 const HomeMain = () => {
@@ -10,6 +11,7 @@ const HomeMain = () => {
             <div className="flex min-[375px]:flex-col min-[375px]:gap-30">
                 <Rooms />
                 <Services />
+                <GoaInfo/>
             </div>
 
         </div>
