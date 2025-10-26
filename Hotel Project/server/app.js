@@ -5,6 +5,7 @@ const cors = require("cors");
 const { Room } = require("./model/rooms.model");
 const roomsRouter = require("./router/rooms.router");
 const servicesRouter = require("./router/services.router");
+const messageRouter = require("./router/messages.router");
 
 dotenv.config();
 const app = express();
@@ -14,7 +15,7 @@ app.use(cors());
 app.use("/services", servicesRouter)
 
 app.use("/",roomsRouter)
-
+app.use("/message",messageRouter)
 
 mongoose
   .connect(process.env.DATABASE_URL, { dbName: process.env.DB_NAME || 'Hotel' })

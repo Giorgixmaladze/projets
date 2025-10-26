@@ -1,5 +1,6 @@
 import BookingForm from "../../components/Home/BookingForm"
 import GoaInfo from "../../components/Home/GoaInfo/GoaInfo"
+import LocationInfo from "../../components/Home/Location/LocationInfo"
 import Rooms from "../../components/Home/Rooms"
 import Services from "../../components/Home/Services"
 const HomeMain = () => {
@@ -12,6 +13,7 @@ const HomeMain = () => {
                 <Rooms />
                 <Services />
                 <GoaInfo/>
+                <LocationInfo />
             </div>
 
         </div>
