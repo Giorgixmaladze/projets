@@ -14,8 +14,8 @@ const HomeIntro = () =>{
                 <div className="w-full h-full bg-[rgba(245,40,145,0.35)] min-[375px]:flex min-[375px]: flex-col min-[375px]:items-center min-[375px]:justify-center">
                    
                    <div className="min-[375px]:flex min-[375px]:items-center min-[375px]:flex-col">
-                        <h2 className="font-semibold text-2xl text-white uppercase">Modern & Spacious Rooms</h2>
-                        <p className="font-light text-gray-200">Enjoy your holidays at the Goa Hotel</p>
+                        <h2 className="font-semibold min-[375px]:text-2xl min-md:text-4xl min-md:font-bold text-white uppercase">Modern & Spacious Rooms</h2>
+                        <p className="font-light text-gray-200 min-md:text-xl min-md:font-medium">Enjoy your holidays at the Goa Hotel</p>
                    </div>
                 </div>
             </div>

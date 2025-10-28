@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer"
 import BookingForm from "../../components/Home/BookingForm"
 import GoaInfo from "../../components/Home/GoaInfo/GoaInfo"
 import LocationInfo from "../../components/Home/Location/LocationInfo"
@@ -14,6 +15,7 @@ const HomeMain = () => {
                 <Services />
                 <GoaInfo/>
                 <LocationInfo />
+                <Footer />
             </div>
 
         </div>

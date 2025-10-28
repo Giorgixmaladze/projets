@@ -9,7 +9,7 @@ const Sidebar = () => {
 
     return (
         <div className={`bg-[rgba(0,0,0,0.3)] ${isOpen ? "w-screen h-screen" : "w-0 h-0"} fixed top-0 left-0 `}>
-            <div className={`${isOpen ? "w-7/12" : "w-0"} bg-white h-full fixed right-0 sidebar pt-5 transition-all duration-300`}>
+            <div className={`${isOpen ? "min-[375px]:w-7/12 min-md:w-4/12" : "w-0"} bg-white h-full fixed right-0 sidebar pt-5 transition-all duration-300`}>
                 <div className={`${isOpen ? "flex" : "hidden"} justify-center border-b border-b-gray-400 pb-5 transition-all duration-1000`}>
                     <h2 className="uppercase text-gray-500 text-[20px]">menu</h2>
 
